@@ -1,0 +1,27 @@
+body {
+    background-color: #fafafa;
+}
+
+table {
+    border-spacing: 0;
+}
+.dashboard {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    #right-dash {
+        width: 100%;
+        #nav {
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                padding: 10px 0;
+                vertical-align: super;
+                color: #7f7f7f;
+                &.router-link-exact-active {
+                    color: black;
+                    border-bottom: 2px solid #2b97f0;
+                }
+            }
+        }
+    }
+}

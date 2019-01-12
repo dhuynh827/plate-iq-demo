@@ -1,0 +1,54 @@
+#history {
+    padding: 20px 34px;
+    header {
+        h3 {
+            font-weight: 400;
+        }
+    }
+    table {
+        width: 100%;
+        margin: auto;
+        tr {
+            background-color: white;
+        }
+        td {
+            padding: 10px;
+            &.date {
+                span {
+                    font-size: 14px;
+                }
+                small {
+                    color: #bfbfbf;
+                    display: block;
+                    font-size: 10px;
+                    letter-spacing: 1px;
+                    font-weight: bold;
+                }
+            }
+            &.status {
+                width: 25px;
+                i {
+                    width: 20px;
+                    height: 20px;
+                    background-color: lightgreen;
+                    display: block;
+                    border-radius: 10px;
+                    &.flagged {
+                        background-color: #fc4461;
+                    }
+                }
+            }
+            &.activity {
+                font-size: 14px;
+                &.flagged {
+                    span {
+                        color: #fc4461;
+                    }
+                }
+                small {
+                    display: block;
+                }
+            }
+        }
+    }
+}

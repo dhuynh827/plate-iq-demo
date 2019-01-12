@@ -1,0 +1,30 @@
+.line-items {
+    background-color: #fafafa;
+    border-top: 1px solid #e5e5e5;
+    clear: both;
+    padding: 20px 34px 0;
+    table {
+        border-spacing: 0;
+        text-align: left;
+        width: 100%;
+        th {
+            padding: 20px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        td {
+            padding: 20px 0;
+            border-bottom: 1px solid #e5e5e5;
+            &.price {
+                small {
+                    display: inline;
+                    font-size: initial;
+                }
+            }
+            small {
+                display: block;
+                font-size: 10px;
+                color: #909090;
+            }
+        }
+    }
+}

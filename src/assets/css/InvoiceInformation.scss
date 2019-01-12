@@ -1,0 +1,134 @@
+.invoice-information {
+    margin-top: 10px;
+    header {
+        float: left;
+        display: inline-block;
+        h1 {
+            display: inline;
+            margin-right: 8px;
+            font-weight: 200;
+            vertical-align: middle;
+            margin-top: 0;
+            margin-bottom: 2px;
+        }
+        small {
+            display: none;
+            color: #1fc5a2;
+            font-size: 11px;
+            font-weight: bold;
+            vertical-align: text-top;
+            &.expanded {
+                display: block!important;
+            }
+            &.client-type-label {
+                color: #bfbfbf;
+                text-transform: uppercase;
+                font-size: 10px;
+                letter-spacing: 0.5px;
+            }
+        }
+        .client-info-container {
+            display: inline-flex;
+            align-items: center;
+        }
+        .indicator {
+            border-radius: 20px;
+            border: 2px solid #bbbdbd;
+            display: inline-flex;
+            height: 30px;
+            align-items: center;
+            width: 30px;
+            justify-content: center;
+            cursor: pointer;
+            background-color: white;
+            &:hover {
+                background-color: #f2f2f2;
+            }
+            i {
+                display: inline-block;
+                border-right: 1px solid black;
+                border-bottom: 1px solid black;
+                width: 8px;
+                height: 8px;
+                z-index: 0;
+                transform: rotate(45deg);
+            }
+            &.expanded {
+                background-color: #f2f2f2;
+                &:hover {
+                    background-color: white;
+                }
+                i {
+                    transform: rotate(-135deg);
+                }
+            }
+        }
+    }
+    .quick-view {
+      margin-top: 10px;
+      &.expanded {
+        display: none;
+      }
+      .see-more {
+        color: #7f7f7f;
+      }
+      span, dl {
+        display: inline-block;
+        vertical-align: top;
+        width: 20%;
+      }
+      dl {
+        width: 15%;
+        div {
+          display: block;
+          width: 100%;
+          margin: 0;
+        }
+      }
+    }
+    dl {
+      display: none;
+      div {
+        display: inline-block;
+        width: 22%;
+        margin-left: 3%;
+        border-top: 1px solid #f2f2f2;
+        height: 50px;
+        vertical-align: bottom;
+        padding: 10px 0;
+        dt {
+          font-size: 8px;
+          text-transform: uppercase;
+          color: #c2c2c2;
+          font-weight: bold;
+          vertical-align: text-top;
+          padding-bottom: 8px;
+        }
+        dd {
+          font-size: 14px;
+          margin: 0;
+        }
+        &.subtotal, &.total {
+          .sub-group {
+            display: block!important;
+            margin: 0;
+            padding: 0;
+            border-top: 0;
+            width: initial;
+            height: initial;
+          }
+          dt, dd {
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+          }
+          dd {
+            float: right;
+          }
+        }
+      }
+      &.expanded {
+        display: block!important;
+      }
+    }
+}
